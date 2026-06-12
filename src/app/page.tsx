@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { company, services } from "@/lib/company";
 
 const navItems = [
@@ -22,8 +23,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label={`${company.legalName} - inicio`}>
-          <span className="brand-mark">AB</span>
-          <span>{company.legalName}</span>
+          <Image src="/logo.png" alt={company.tradeName} width={140} height={48} priority />
         </a>
 
         <nav aria-label="Menu principal">
