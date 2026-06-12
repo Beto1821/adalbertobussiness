@@ -39,7 +39,7 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">Site oficial</p>
           <h1>
-            <Image src="/logo.png" alt={company.tradeName} width={320} height={110} priority />
+            <Image src="/logo.png" alt={company.tradeName} width={640} height={220} priority />
           </h1>
           <p className="subtitle">Solucoes digitais, automacao e tecnologia para empresas</p>
           <p className="hero-text">
