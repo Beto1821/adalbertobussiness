@@ -1,0 +1,141 @@
+import { company, services } from "@/lib/company";
+
+const navItems = [
+  { label: "Inicio", href: "#inicio" },
+  { label: "Sobre", href: "#sobre" },
+  { label: "Servicos", href: "#servicos" },
+  { label: "Contato", href: "#contato" }
+];
+
+const companyInfo = [
+  ["Razao social", company.legalName],
+  ["Nome fantasia", company.tradeName],
+  ["CNPJ", company.cnpj],
+  ["Telefone", company.phone],
+  ["E-mail", company.email],
+  ["Cidade/UF", company.cityState],
+  ["Site oficial", company.domain]
+];
+
+export default function Home() {
+  return (
+    <main>
+      <header className="site-header">
+        <a className="brand" href="#inicio" aria-label={`${company.legalName} - inicio`}>
+          <span className="brand-mark">AB</span>
+          <span>{company.legalName}</span>
+        </a>
+
+        <nav aria-label="Menu principal">
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </header>
+
+      <section id="inicio" className="hero section">
+        <div className="hero-content">
+          <p className="eyebrow">Site oficial</p>
+          <h1>{company.legalName}</h1>
+          <p className="subtitle">Solucoes digitais, automacao e tecnologia para empresas</p>
+          <p className="hero-text">
+            Atuamos na organizacao de processos digitais, configuracao de CRM,
+            integracoes com APIs e webhooks, automacao de rotinas e suporte operacional
+            para empresas que precisam tornar seus fluxos comerciais mais claros e eficientes.
+          </p>
+          <div className="hero-actions">
+            <a className="button primary" href="#contato">Entrar em contato</a>
+            <a className="button secondary" href="#informacoes">Ver dados oficiais</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" className="section split">
+        <div>
+          <p className="eyebrow">Sobre a empresa</p>
+          <h2>Tecnologia aplicada a processos empresariais</h2>
+        </div>
+        <div className="content-block">
+          <p>
+            A {company.legalName} presta servicos digitais voltados a automacao,
+            CRM, integracoes entre plataformas, webhooks e suporte operacional em
+            tecnologia. O trabalho e conduzido com foco em organizacao, clareza
+            tecnica e consistencia na execucao de processos comerciais.
+          </p>
+          <p>
+            As solucoes sao planejadas conforme a realidade operacional de cada
+            empresa, sem promessas de resultados financeiros garantidos e sem uso
+            de informacoes exageradas. O objetivo e apoiar fluxos digitais mais
+            estaveis, rastreaveis e adequados ao uso empresarial.
+          </p>
+        </div>
+      </section>
+
+      <section id="servicos" className="section">
+        <div className="section-heading">
+          <p className="eyebrow">Servicos</p>
+          <h2>Atuacao profissional em tecnologia e automacao</h2>
+        </div>
+        <div className="service-grid">
+          {services.map((service) => (
+            <article className="service-card" key={service.title}>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="informacoes" className="section official-info">
+        <div className="section-heading">
+          <p className="eyebrow">Dados oficiais</p>
+          <h2>Informacoes da empresa</h2>
+        </div>
+        <dl className="info-list">
+          {companyInfo.map(([label, value]) => (
+            <div key={label}>
+              <dt>{label}</dt>
+              <dd>{value}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
+      <section id="contato" className="section contact">
+        <div>
+          <p className="eyebrow">Contato</p>
+          <h2>Canais oficiais de atendimento</h2>
+          <p>
+            Para solicitar suporte, consultoria ou informacoes comerciais, entre em
+            contato pelos canais oficiais abaixo.
+          </p>
+        </div>
+        <div className="contact-panel">
+          <a href={`tel:${company.phone.replace(/\D/g, "")}`}>{company.phone}</a>
+          <a href={`mailto:${company.email}`}>{company.email}</a>
+          <p>{company.businessHours}</p>
+          <a className="button primary full" href={company.whatsappUrl} target="_blank" rel="noreferrer">
+            Falar pelo WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <footer className="site-footer">
+        <div>
+          <strong>{company.legalName}</strong>
+          <p>CNPJ: {company.cnpj}</p>
+          <p>{company.email} | {company.phone}</p>
+        </div>
+        <div className="footer-links">
+          <a href="/politica-de-privacidade">Politica de Privacidade</a>
+          <a href="/termos-de-uso">Termos de Uso</a>
+        </div>
+        <p className="copyright">
+          © 2026 {company.legalName}. Todos os direitos reservados.
+        </p>
+      </footer>
+    </main>
+  );
+}
