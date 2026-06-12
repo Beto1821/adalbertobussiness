@@ -38,7 +38,9 @@ export default function Home() {
       <section id="inicio" className="hero section">
         <div className="hero-content">
           <p className="eyebrow">Site oficial</p>
-          <h1>{company.legalName}</h1>
+          <h1>
+            <Image src="/logo.png" alt={company.tradeName} width={320} height={110} priority />
+          </h1>
           <p className="subtitle">Solucoes digitais, automacao e tecnologia para empresas</p>
           <p className="hero-text">
             Atuamos na organizacao de processos digitais, configuracao de CRM,
