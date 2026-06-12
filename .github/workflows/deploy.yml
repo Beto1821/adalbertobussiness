@@ -19,13 +19,10 @@ jobs:
 
       - run: npm run build
 
-      - name: Upload to Hostinger via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Push built files to deploy branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          server: 82.112.247.23
-          username: u369425731
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./out/
-          server-dir: /public_html/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./out
+          force_orphan: true
