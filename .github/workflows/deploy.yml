@@ -19,11 +19,13 @@ jobs:
 
       - run: npm run build
 
-      - name: Upload to Hostinger via FTP
+      - name: Upload to Hostinger via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 82.112.247.23
           username: u369425731
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
           local-dir: ./out/
           server-dir: /public_html/
