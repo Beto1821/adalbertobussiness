@@ -56,7 +56,6 @@ body {
   --color-electric-purple: #7c3aed;
   --color-cobalt-blue: #1d4ed8;
 
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
