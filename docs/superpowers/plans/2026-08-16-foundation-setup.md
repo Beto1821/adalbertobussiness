@@ -558,7 +558,7 @@ git commit -m "feat: scaffold EN/PT content dictionaries"
 - Delete: `src/app/layout.tsx` (replaced by the three group layouts — Next.js requires the root `app/layout.tsx` to NOT exist when using multiple root layouts via route groups)
 
 **Interfaces:**
-- Consumes: `COMPANY` (Task 7), Geist fonts (installed with Next.js, no new package needed).
+- Consumes: `COMPANY` (Task 7), Geist fonts (installed with Next.js, no new package needed), the `--font-sans`/`--font-mono` CSS custom property names already wired into `src/app/globals.css`'s `@theme inline` block by shadcn's init (Task 6) and Task 8. shadcn's scaffold maps Tailwind's `font-sans` utility via `--font-sans: var(--font-sans);` (self-referential — expects something to set the literal `--font-sans` custom property) and Task 8 added `--font-mono: var(--font-geist-mono), ui-monospace, monospace;`. This is why the Geist loader below uses `variable: "--font-sans"` (not `--font-geist-sans`) for Geist Sans — it must match shadcn's existing mapping exactly — while the Geist Mono loader keeps `variable: "--font-geist-mono"` to match Task 8's already-committed token. Do not "fix" this asymmetry — it's intentional, matching what's already committed in `globals.css`.
 - Produces: three working routes — `/` (English, `lang="en"`), `/pt` (Portuguese, `lang="pt"`), `/politica-de-privacidade` + `/termos-de-uso` (Portuguese, `lang="pt"`). Task 13 fills in `(en)/page.tsx` and `(pt)/pt/page.tsx` with real Header+Hero content; this task only needs them to render *something* valid.
 
 - [ ] **Step 1: Create the three route group directories and move files**
@@ -578,7 +578,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { COMPANY } from "@/lib/constants";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -614,7 +614,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { COMPANY } from "@/lib/constants";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -649,7 +649,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { COMPANY } from "@/lib/constants";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {

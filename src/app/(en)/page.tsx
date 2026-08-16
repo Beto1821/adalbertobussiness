@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { company, services } from "@/lib/company";
+import { COMPANY } from "@/lib/constants";
 
 const navItems = [
   { label: "Inicio", href: "#inicio" },
@@ -9,21 +9,21 @@ const navItems = [
 ];
 
 const companyInfo = [
-  ["Razao social", company.legalName],
-  ["Nome fantasia", company.tradeName],
-  ["CNPJ", company.cnpj],
-  ["Telefone", company.phone],
-  ["E-mail", company.email],
-  ["Cidade/UF", company.cityState],
-  ["Site oficial", company.domain]
+  ["Razao social", COMPANY.legalName],
+  ["Nome fantasia", COMPANY.tradeName],
+  ["CNPJ", COMPANY.cnpj],
+  ["Telefone", COMPANY.phone],
+  ["E-mail", COMPANY.email],
+  ["Cidade/UF", COMPANY.cityState],
+  ["Site oficial", COMPANY.domain]
 ];
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label={`${company.legalName} - inicio`}>
-          <Image src="/logo.png" alt={company.tradeName} width={140} height={48} priority />
+        <a className="brand" href="#inicio" aria-label={`${COMPANY.legalName} - inicio`}>
+          <Image src="/logo.png" alt={COMPANY.tradeName} width={140} height={48} priority />
         </a>
 
         <nav aria-label="Menu principal">
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">Site oficial</p>
           <h1>
-            <Image src="/logo.png" alt={company.tradeName} width={640} height={220} priority />
+            <Image src="/logo.png" alt={COMPANY.tradeName} width={640} height={220} priority />
           </h1>
           <p className="subtitle">Solucoes digitais, automacao e tecnologia para empresas</p>
           <p className="hero-text">
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
         <div className="content-block">
           <p>
-            A {company.legalName} presta servicos digitais voltados a automacao,
+            A {COMPANY.legalName} presta servicos digitais voltados a automacao,
             CRM, integracoes entre plataformas, webhooks e suporte operacional em
             tecnologia. O trabalho e conduzido com foco em organizacao, clareza
             tecnica e consistencia na execucao de processos comerciais.
@@ -72,21 +72,6 @@ export default function Home() {
             de informacoes exageradas. O objetivo e apoiar fluxos digitais mais
             estaveis, rastreaveis e adequados ao uso empresarial.
           </p>
-        </div>
-      </section>
-
-      <section id="servicos" className="section">
-        <div className="section-heading">
-          <p className="eyebrow">Servicos</p>
-          <h2>Atuacao profissional em tecnologia e automacao</h2>
-        </div>
-        <div className="service-grid">
-          {services.map((service) => (
-            <article className="service-card" key={service.title}>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </article>
-          ))}
         </div>
       </section>
 
@@ -115,10 +100,10 @@ export default function Home() {
           </p>
         </div>
         <div className="contact-panel">
-          <a href={`tel:${company.phone.replace(/\D/g, "")}`}>{company.phone}</a>
-          <a href={`mailto:${company.email}`}>{company.email}</a>
-          <p>{company.businessHours}</p>
-          <a className="button primary full" href={company.whatsappUrl} target="_blank" rel="noreferrer">
+          <a href={`tel:${COMPANY.phone.replace(/\D/g, "")}`}>{COMPANY.phone}</a>
+          <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
+          <p>{COMPANY.businessHours}</p>
+          <a className="button primary full" href={COMPANY.whatsappUrl} target="_blank" rel="noreferrer">
             Falar pelo WhatsApp
           </a>
         </div>
@@ -126,16 +111,16 @@ export default function Home() {
 
       <footer className="site-footer">
         <div>
-          <strong>{company.legalName}</strong>
-          <p>CNPJ: {company.cnpj}</p>
-          <p>{company.email} | {company.phone}</p>
+          <strong>{COMPANY.legalName}</strong>
+          <p>CNPJ: {COMPANY.cnpj}</p>
+          <p>{COMPANY.email} | {COMPANY.phone}</p>
         </div>
         <div className="footer-links">
           <a href="/politica-de-privacidade">Politica de Privacidade</a>
           <a href="/termos-de-uso">Termos de Uso</a>
         </div>
         <p className="copyright">
-          © 2026 {company.legalName}. Todos os direitos reservados.
+          © 2026 {COMPANY.legalName}. Todos os direitos reservados.
         </p>
       </footer>
     </main>
