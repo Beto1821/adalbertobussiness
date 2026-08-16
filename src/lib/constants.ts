@@ -8,5 +8,5 @@ export const COMPANY = {
   domain: "adalbertobussiness.com",
   website: "https://adalbertobussiness.com",
   whatsappUrl: "https://wa.me/5535910198999",
-  businessHours: "Segunda a sexta, das 9h as 18h"
+  businessHours: "Segunda a sexta, das 9h às 18h"
 };

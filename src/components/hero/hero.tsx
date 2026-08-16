@@ -27,7 +27,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section ref={scopeRef} id="hero" className="flex min-h-screen flex-col justify-center bg-near-black px-6 pt-16">
       <div className="mx-auto w-full max-w-4xl">
-        <p data-hero-animate className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple">
+        <p data-hero-animate className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
           {dict.hero.eyebrow}
         </p>
         <h1 data-hero-animate className="text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
