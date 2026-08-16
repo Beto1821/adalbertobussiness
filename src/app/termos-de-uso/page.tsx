@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { company } from "@/lib/company";
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
 export default function TermsOfUse() {
   return (
     <main className="legal-page">
-      <a href="/">Voltar ao inicio</a>
+      <Link href="/">Voltar ao inicio</Link>
       <h1>Termos de Uso</h1>
       <p>
         Ao acessar este site, voce concorda com estes Termos de Uso. O conteudo

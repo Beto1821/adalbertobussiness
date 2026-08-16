@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { company } from "@/lib/company";
 
 export const metadata = {
@@ -8,7 +9,7 @@ export const metadata = {
 export default function PrivacyPolicy() {
   return (
     <main className="legal-page">
-      <a href="/">Voltar ao inicio</a>
+      <Link href="/">Voltar ao inicio</Link>
       <h1>Politica de Privacidade</h1>
       <p>
         Esta Politica de Privacidade descreve como a {company.legalName} pode
