@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { company } from "@/lib/company";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata = {
-  title: `Politica de Privacidade | ${company.legalName}`,
-  description: `Politica de Privacidade da ${company.legalName}.`
+  title: `Politica de Privacidade | ${COMPANY.legalName}`,
+  description: `Politica de Privacidade da ${COMPANY.legalName}.`
 };
 
 export default function PrivacyPolicy() {
@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <Link href="/">Voltar ao inicio</Link>
       <h1>Politica de Privacidade</h1>
       <p>
-        Esta Politica de Privacidade descreve como a {company.legalName} pode
+        Esta Politica de Privacidade descreve como a {COMPANY.legalName} pode
         coletar, usar e proteger informacoes fornecidas por clientes, parceiros
         e visitantes deste site.
       </p>
@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
       </p>
       <h2>Contato</h2>
       <p>
-        Para duvidas sobre privacidade, entre em contato pelo e-mail {company.email}.
+        Para duvidas sobre privacidade, entre em contato pelo e-mail {COMPANY.email}.
       </p>
     </main>
   );

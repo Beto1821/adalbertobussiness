@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { company } from "@/lib/company";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata = {
-  title: `Termos de Uso | ${company.legalName}`,
-  description: `Termos de Uso do site oficial da ${company.legalName}.`
+  title: `Termos de Uso | ${COMPANY.legalName}`,
+  description: `Termos de Uso do site oficial da ${COMPANY.legalName}.`
 };
 
 export default function TermsOfUse() {
@@ -14,7 +14,7 @@ export default function TermsOfUse() {
       <p>
         Ao acessar este site, voce concorda com estes Termos de Uso. O conteudo
         apresentado tem finalidade institucional e informativa sobre a
-        {` ${company.legalName}`}.
+        {` ${COMPANY.legalName}`}.
       </p>
       <h2>Informacoes institucionais</h2>
       <p>
@@ -29,8 +29,8 @@ export default function TermsOfUse() {
       </p>
       <h2>Contato</h2>
       <p>
-        O canal oficial para contato e {company.email}, alem do telefone
-        {` ${company.phone}`}.
+        O canal oficial para contato e {COMPANY.email}, alem do telefone
+        {` ${COMPANY.phone}`}.
       </p>
     </main>
   );
