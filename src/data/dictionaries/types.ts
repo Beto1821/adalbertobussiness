@@ -11,4 +11,19 @@ export type Dictionary = {
     primaryCta: string;
     secondaryCta: string;
   };
+  positioning: {
+    eyebrow: string;
+    title: string;
+    body: string;
+  };
+  capabilities: {
+    eyebrow: string;
+    title: string;
+    items: {
+      title: string;
+      description: string;
+      cta: string;
+      href: string;
+    }[];
+  };
 };
