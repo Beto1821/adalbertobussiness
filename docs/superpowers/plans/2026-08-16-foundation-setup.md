@@ -714,7 +714,7 @@ git commit -m "refactor: split into (en)/(pt)/(legal) route groups for bilingual
 - Create: `src/components/navigation/mobile-nav.tsx`
 
 **Interfaces:**
-- Consumes: `Dictionary` (Task 9), `Button` (Task 6), design tokens (Task 8).
+- Consumes: `Dictionary` (Task 9), design tokens (Task 8).
 - Produces: `SiteHeader({ dict, homeHref })`, consumed by Task 13.
 
 - [ ] **Step 1: `src/components/navigation/mobile-nav.tsx`**
@@ -880,7 +880,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <Button asChild size="lg" className="hover:bg-electric-purple">
             <a href="#cta">{dict.hero.primaryCta}</a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:border-white/40 hover:bg-transparent">
+          <Button asChild size="lg" variant="outline" className="bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent">
             <a href="#contact">{dict.hero.secondaryCta}</a>
           </Button>
         </div>
