@@ -13,6 +13,15 @@ export const metadata: Metadata = {
     template: "%s | Adalberto Business"
   },
   description: "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+  openGraph: {
+    title: "Adalberto Business | Parceiro de Engenharia de Software",
+    description:
+      "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+    url: `${COMPANY.website}/pt`,
+    siteName: "Adalberto Business",
+    locale: "pt_BR",
+    type: "website"
+  },
   alternates: {
     canonical: "/pt",
     languages: { en: "/", pt: "/pt" }

@@ -139,3 +139,38 @@ body {
     @apply font-sans;
   }
 }
+
+.legal-page {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding: 4rem 1.5rem;
+}
+
+.legal-page h1 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-near-black);
+}
+
+.legal-page h2 {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-near-black);
+}
+
+.legal-page p {
+  margin-top: 0.75rem;
+  line-height: 1.7;
+  color: color-mix(in oklch, var(--color-near-black), transparent 20%);
+}
+
+.legal-page a {
+  color: var(--color-cobalt-blue);
+  font-weight: 600;
+}
+
+.legal-page a:hover {
+  text-decoration: underline;
+}

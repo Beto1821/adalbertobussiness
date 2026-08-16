@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   },
   description:
     "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
+  openGraph: {
+    title: "Adalberto Business | Software Engineering Partner",
+    description:
+      "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
+    url: COMPANY.website,
+    siteName: "Adalberto Business",
+    locale: "en_US",
+    type: "website"
+  },
   alternates: {
     canonical: "/",
     languages: { en: "/", pt: "/pt" }

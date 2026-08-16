@@ -24,3 +24,6 @@ Guia de trabalho para Claude Code neste repositório. Segue `ADALBERTO_BUSINESS_
 - Site é bilíngue: inglês em `/` (padrão), português em `/pt`. Páginas legais (`/politica-de-privacidade`, `/termos-de-uso`) permanecem só em português.
 - Dados legais/CNPJ da empresa vivem em `src/lib/constants.ts` (`COMPANY`) — nunca alterar os valores sem confirmação.
 - Não existe suite de testes automatizados neste projeto. Verificação é manual: `npm run dev` + revisão visual, mais `npx tsc --noEmit`, `npm run lint` e `npm run build`.
+- **`src/app/layout.tsx` NÃO deve existir.** O roteamento usa o padrão "multiple root layouts" do Next.js — cada grupo de rotas (`(en)`, `(pt)`, `(legal)`) tem seu próprio `layout.tsx` com `<html>`/`<body>` (definindo `lang` correto por idioma). Recriar um `app/layout.tsx` na raiz quebra esse esquema inteiro. Se um `app/layout.tsx` aparecer (ex: gerado por uma ferramenta), delete-o.
+- Conteúdo textual (nav, hero) vive em `src/data/dictionaries/en.ts` e `pt.ts`, tipados por `src/data/dictionaries/types.ts`. Editar copy ali, não direto nos componentes.
+- Dependências do próprio scaffold do shadcn/ui (`radix-ui`, `class-variance-authority`, `clsx`, `tailwind-merge`, `tw-animate-css`) são uma exceção esperada à lista de dependências da regra acima — não são "dependências desnecessárias" a remover.

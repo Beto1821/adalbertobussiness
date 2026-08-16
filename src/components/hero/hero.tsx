@@ -37,11 +37,11 @@ export function Hero({ dict }: { dict: Dictionary }) {
           {dict.hero.subheadline}
         </p>
         <div data-hero-animate className="mt-10 flex flex-wrap gap-4">
-          <Button asChild size="lg" className="hover:bg-electric-purple">
+          <Button asChild size="lg" className="h-12 px-6 hover:bg-electric-purple">
             <a href="#cta">{dict.hero.primaryCta}</a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent">
-            <a href="#contact">{dict.hero.secondaryCta}</a>
+          <Button asChild size="lg" variant="outline" className="h-12 px-6 bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent hover:text-white">
+            <a href="#cta">{dict.hero.secondaryCta}</a>
           </Button>
         </div>
       </div>
