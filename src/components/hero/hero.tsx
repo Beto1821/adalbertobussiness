@@ -40,7 +40,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
           <Button asChild size="lg" className="hover:bg-electric-purple">
             <a href="#cta">{dict.hero.primaryCta}</a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:border-white/40 hover:bg-transparent">
+          <Button asChild size="lg" variant="outline" className="bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent">
             <a href="#contact">{dict.hero.secondaryCta}</a>
           </Button>
         </div>
