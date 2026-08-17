@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     template: "%s | Adalberto Business"
   },
   description: "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-icon.png"
+  },
   openGraph: {
     title: "Adalberto Business | Parceiro de Engenharia de Software",
     description:
@@ -21,7 +25,15 @@ export const metadata: Metadata = {
     url: `${COMPANY.website}/pt`,
     siteName: "Adalberto Business",
     locale: "pt_BR",
-    type: "website"
+    type: "website",
+    images: [{ url: "/og-image-pt.png", width: 1200, height: 630, alt: "Adalberto Business" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adalberto Business | Parceiro de Engenharia de Software",
+    description:
+      "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+    images: ["/og-image-pt.png"]
   },
   alternates: {
     canonical: "/pt",

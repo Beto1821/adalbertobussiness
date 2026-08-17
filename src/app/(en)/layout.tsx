@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   },
   description:
     "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-icon.png"
+  },
   openGraph: {
     title: "Adalberto Business | Software Engineering Partner",
     description:
@@ -22,7 +26,15 @@ export const metadata: Metadata = {
     url: COMPANY.website,
     siteName: "Adalberto Business",
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Adalberto Business" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adalberto Business | Software Engineering Partner",
+    description:
+      "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
+    images: ["/og-image.png"]
   },
   alternates: {
     canonical: "/",

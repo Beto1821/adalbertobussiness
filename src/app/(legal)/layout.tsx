@@ -7,7 +7,11 @@ const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(COMPANY.website)
+  metadataBase: new URL(COMPANY.website),
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-icon.png"
+  }
 };
 
 export default function LegalLayout({ children }: Readonly<{ children: React.ReactNode }>) {
