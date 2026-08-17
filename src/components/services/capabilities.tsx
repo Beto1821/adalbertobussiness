@@ -22,9 +22,8 @@ export function Capabilities({ dict }: { dict: Dictionary }) {
               <m.div
                 key={item.title}
                 whileHover={{ y: -4, borderColor: "rgba(255,255,255,0.4)" }}
-                whileFocus={{ y: -4, borderColor: "rgba(255,255,255,0.4)" }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className="flex flex-col rounded-lg border border-white/15 p-6"
+                className="flex flex-col rounded-lg border border-white/15 p-6 transition-[transform,border-color] duration-200 ease-out focus-within:border-white/40 motion-safe:focus-within:-translate-y-1"
               >
                 <h3 className="text-lg font-semibold text-white">{item.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-white/70">{item.description}</p>
