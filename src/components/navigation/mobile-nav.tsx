@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import type { Dictionary } from "@/data/dictionaries/types";
 
@@ -34,13 +33,6 @@ export function MobileNav({ dict }: { dict: Dictionary }) {
                 {item.label}
               </a>
             ))}
-            <Link
-              href={dict.nav.localeSwitchHref}
-              onClick={() => setOpen(false)}
-              className="text-base font-medium text-white/50"
-            >
-              {dict.nav.localeSwitchLabel}
-            </Link>
           </nav>
         </div>
       ) : null}

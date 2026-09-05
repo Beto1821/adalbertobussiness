@@ -8,9 +8,7 @@ export const pt: Dictionary = {
       { label: "Tecnologia", href: "#technology" },
       { label: "Projetos", href: "#work" },
       { label: "Contato", href: "#cta" }
-    ],
-    localeSwitchLabel: "EN",
-    localeSwitchHref: "/en"
+    ]
   },
   hero: {
     eyebrow: "Parceiro de Engenharia de Software · Sul de Minas",

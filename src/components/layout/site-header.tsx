@@ -22,9 +22,6 @@ export function SiteHeader({ dict, homeHref }: { dict: Dictionary; homeHref: str
               {item.label}
             </a>
           ))}
-          <Link href={dict.nav.localeSwitchHref} className="text-sm font-medium text-white/50 hover:text-white">
-            {dict.nav.localeSwitchLabel}
-          </Link>
         </nav>
 
         <MobileNav dict={dict} />

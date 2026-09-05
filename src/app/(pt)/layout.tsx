@@ -39,8 +39,7 @@ export const metadata: Metadata = {
     images: ["/og-image-pt.png"]
   },
   alternates: {
-    canonical: "/",
-    languages: { "pt-BR": "/", en: "/en" }
+    canonical: "/"
   }
 };
 
