@@ -6,6 +6,7 @@ export type Dictionary = {
   };
   hero: {
     eyebrow: string;
+    regionLabel?: string;
     headline: string;
     subheadline: string;
     primaryCta: string;
@@ -15,6 +16,16 @@ export type Dictionary = {
     eyebrow: string;
     title: string;
     body: string;
+  };
+  tiers?: {
+    eyebrow: string;
+    title: string;
+    items: {
+      title: string;
+      description: string;
+      cta: string;
+      href: string;
+    }[];
   };
   capabilities: {
     eyebrow: string;
