@@ -8,5 +8,11 @@ export const COMPANY = {
   domain: "adalbertobussiness.com",
   website: "https://adalbertobussiness.com",
   whatsappUrl: "https://wa.me/5535910198999",
-  businessHours: "Segunda a sexta, das 9h às 18h"
+  businessHours: "Segunda a sexta, das 9h às 18h",
+  regionCities: [
+    "São Gonçalo do Sapucaí",
+    "Varginha",
+    "Pouso Alegre",
+    "Santa Rita do Sapucaí"
+  ]
 };
