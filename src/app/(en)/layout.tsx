@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/en",
-    languages: { pt: "/", en: "/en" }
+    languages: { "pt-BR": "/", en: "/en" }
   }
 };
 

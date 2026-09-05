@@ -12,7 +12,7 @@ export function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${gtagId}');
+          gtag('config', ${JSON.stringify(gtagId)});
         `}
       </Script>
     </>

@@ -40,13 +40,13 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
-    languages: { pt: "/", en: "/en" }
+    languages: { "pt-BR": "/", en: "/en" }
   }
 };
 
 export default function PortugueseLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt">
+    <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-near-black font-sans antialiased`}>
         <LocalBusinessJsonLd />
         <Analytics />
