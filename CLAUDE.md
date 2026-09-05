@@ -19,7 +19,7 @@ Guia de trabalho para Claude Code neste repositório. Segue `ADALBERTO_BUSINESS_
 
 ## Regras específicas deste repositório
 
-- **Nunca commitar direto em `main`.** `main` faz deploy automático para o Hostinger em produção via `.github/workflows/deploy.yml`. Trabalhar em `develop` e branches `feature/*`.
+- Por padrão, trabalhar em `develop` e branches `feature/*`. Commit direto em `main` é permitido quando o usuário pedir explicitamente — lembrar que `main` faz deploy automático para o Hostinger em produção via `.github/workflows/deploy.yml`, então um commit ali publica imediatamente.
 - **Não alterar `next.config.ts` nem `.github/workflows/deploy.yml`** até a fase de Produção (migração para Vercel), a menos que explicitamente pedido.
 - Site é bilíngue: inglês em `/` (padrão), português em `/pt`. Páginas legais (`/politica-de-privacidade`, `/termos-de-uso`) permanecem só em português.
 - Dados legais/CNPJ da empresa vivem em `src/lib/constants.ts` (`COMPANY`) — nunca alterar os valores sem confirmação.
