@@ -30,6 +30,11 @@ export function Hero({ dict }: { dict: Dictionary }) {
         <p data-hero-animate className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
           {dict.hero.eyebrow}
         </p>
+        {dict.hero.regionLabel ? (
+          <p data-hero-animate className="mb-6 text-sm text-white/50">
+            {dict.hero.regionLabel}
+          </p>
+        ) : null}
         <h1 data-hero-animate className="text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-7xl">
           {dict.hero.headline}
         </h1>
