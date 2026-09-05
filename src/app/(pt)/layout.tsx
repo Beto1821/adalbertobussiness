@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { MotionConfig } from "framer-motion";
 import "../globals.css";
 import { COMPANY } from "@/lib/constants";
+import { LocalBusinessJsonLd } from "@/components/seo/local-business-jsonld";
 
 const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -46,6 +47,7 @@ export default function PortugueseLayout({ children }: Readonly<{ children: Reac
   return (
     <html lang="pt">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-near-black font-sans antialiased`}>
+        <LocalBusinessJsonLd />
         <MotionConfig reducedMotion="user">{children}</MotionConfig>
       </body>
     </html>
