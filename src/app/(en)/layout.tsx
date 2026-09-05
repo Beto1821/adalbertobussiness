@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { MotionConfig } from "framer-motion";
 import "../globals.css";
 import { COMPANY } from "@/lib/constants";
+import { Analytics } from "@/components/analytics";
 
 const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -50,6 +51,7 @@ export default function EnglishLayout({ children }: Readonly<{ children: React.R
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-near-black font-sans antialiased`}>
+        <Analytics />
         <MotionConfig reducedMotion="user">{children}</MotionConfig>
       </body>
     </html>
