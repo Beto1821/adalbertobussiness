@@ -10,19 +10,20 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY.website),
   title: {
-    default: "Adalberto Business | Parceiro de Engenharia de Software",
+    default: "Adalberto Business | Engenharia de Software no Sul de Minas",
     template: "%s | Adalberto Business"
   },
-  description: "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+  description:
+    "Engenharia de software para empresas de pequeno a grande porte em São Gonçalo do Sapucaí, Varginha, Pouso Alegre e Santa Rita do Sapucaí — Sul de Minas.",
   icons: {
     icon: "/favicon.png",
     apple: "/apple-icon.png"
   },
   openGraph: {
-    title: "Adalberto Business | Parceiro de Engenharia de Software",
+    title: "Adalberto Business | Engenharia de Software no Sul de Minas",
     description:
-      "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
-    url: `${COMPANY.website}/pt`,
+      "Engenharia de software para empresas de pequeno a grande porte em São Gonçalo do Sapucaí, Varginha, Pouso Alegre e Santa Rita do Sapucaí — Sul de Minas.",
+    url: COMPANY.website,
     siteName: "Adalberto Business",
     locale: "pt_BR",
     type: "website",
@@ -30,14 +31,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adalberto Business | Parceiro de Engenharia de Software",
+    title: "Adalberto Business | Engenharia de Software no Sul de Minas",
     description:
-      "Equipes de engenharia de software experientes para empresas que precisam entregar, modernizar e escalar produtos digitais.",
+      "Engenharia de software para empresas de pequeno a grande porte em São Gonçalo do Sapucaí, Varginha, Pouso Alegre e Santa Rita do Sapucaí — Sul de Minas.",
     images: ["/og-image-pt.png"]
   },
   alternates: {
-    canonical: "/pt",
-    languages: { en: "/", pt: "/pt" }
+    canonical: "/",
+    languages: { pt: "/", en: "/en" }
   }
 };
 

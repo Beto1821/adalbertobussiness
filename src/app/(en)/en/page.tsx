@@ -7,7 +7,7 @@ import { en } from "@/data/dictionaries/en";
 export default function EnglishHome() {
   return (
     <main>
-      <SiteHeader dict={en} homeHref="/" />
+      <SiteHeader dict={en} homeHref="/en" />
       <Hero dict={en} />
       <Positioning dict={en} />
       <Capabilities dict={en} />

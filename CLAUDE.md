@@ -21,7 +21,7 @@ Guia de trabalho para Claude Code neste repositório. Segue `ADALBERTO_BUSINESS_
 
 - Por padrão, trabalhar em `develop` e branches `feature/*`. Commit direto em `main` é permitido quando o usuário pedir explicitamente — lembrar que `main` faz deploy automático para o Hostinger em produção via `.github/workflows/deploy.yml`, então um commit ali publica imediatamente.
 - **Não alterar `next.config.ts` nem `.github/workflows/deploy.yml`** até a fase de Produção (migração para Vercel), a menos que explicitamente pedido.
-- Site é bilíngue: inglês em `/` (padrão), português em `/pt`. Páginas legais (`/politica-de-privacidade`, `/termos-de-uso`) permanecem só em português.
+- Site é bilíngue: português em `/` (padrão, foco regional Sul de Minas), inglês em `/en` (oferta internacional secundária, `noindex` por enquanto). Páginas legais (`/politica-de-privacidade`, `/termos-de-uso`) permanecem só em português.
 - Dados legais/CNPJ da empresa vivem em `src/lib/constants.ts` (`COMPANY`) — nunca alterar os valores sem confirmação.
 - Não existe suite de testes automatizados neste projeto. Verificação é manual: `npm run dev` + revisão visual, mais `npx tsc --noEmit`, `npm run lint` e `npm run build`.
 - **`src/app/layout.tsx` NÃO deve existir.** O roteamento usa o padrão "multiple root layouts" do Next.js — cada grupo de rotas (`(en)`, `(pt)`, `(legal)`) tem seu próprio `layout.tsx` com `<html>`/`<body>` (definindo `lang` correto por idioma). Recriar um `app/layout.tsx` na raiz quebra esse esquema inteiro. Se um `app/layout.tsx` aparecer (ex: gerado por uma ferramenta), delete-o.

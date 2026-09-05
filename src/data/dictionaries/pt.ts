@@ -9,7 +9,7 @@ export const pt: Dictionary = {
       { label: "Contato", href: "#cta" }
     ],
     localeSwitchLabel: "EN",
-    localeSwitchHref: "/"
+    localeSwitchHref: "/en"
   },
   hero: {
     eyebrow: "Parceiro de Engenharia de Software · Sul de Minas",

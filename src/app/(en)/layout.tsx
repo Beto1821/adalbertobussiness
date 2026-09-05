@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   },
   description:
     "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
+  robots: {
+    index: false,
+    follow: false
+  },
   icons: {
     icon: "/favicon.png",
     apple: "/apple-icon.png"
@@ -23,7 +27,7 @@ export const metadata: Metadata = {
     title: "Adalberto Business | Software Engineering Partner",
     description:
       "Experienced software engineering teams for businesses that need to deliver, modernize and scale digital products.",
-    url: COMPANY.website,
+    url: `${COMPANY.website}/en`,
     siteName: "Adalberto Business",
     locale: "en_US",
     type: "website",
@@ -37,8 +41,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"]
   },
   alternates: {
-    canonical: "/",
-    languages: { en: "/", pt: "/pt" }
+    canonical: "/en",
+    languages: { pt: "/", en: "/en" }
   }
 };
 
