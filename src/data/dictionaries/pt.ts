@@ -1,3 +1,4 @@
+import { COMPANY } from "@/lib/constants";
 import type { Dictionary } from "./types";
 
 export const pt: Dictionary = {
@@ -32,19 +33,19 @@ export const pt: Dictionary = {
         title: "Pequeno porte",
         description: "Sistemas enxutos, automações e presença digital sob medida para começar com o pé direito, sem contratar uma estrutura que você ainda não precisa.",
         cta: "Ver como começar",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       },
       {
         title: "Médio porte",
         description: "Sistemas próprios, integrações entre ferramentas e consultoria técnica pontual para quem já sente os limites de soluções genéricas.",
         cta: "Agendar uma conversa",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       },
       {
         title: "Grande porte",
         description: "Squads dedicados, modernização de legado e consultoria técnica contínua para operações que não podem parar.",
         cta: "Falar com o time",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       }
     ]
   },

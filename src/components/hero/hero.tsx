@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Button } from "@/components/ui/button";
+import { COMPANY } from "@/lib/constants";
 import type { Dictionary } from "@/data/dictionaries/types";
 
 export function Hero({ dict }: { dict: Dictionary }) {
@@ -43,10 +44,10 @@ export function Hero({ dict }: { dict: Dictionary }) {
         </p>
         <div data-hero-animate className="mt-10 flex flex-wrap gap-4">
           <Button asChild size="lg" className="h-12 px-6 hover:bg-electric-purple">
-            <a href="#cta">{dict.hero.primaryCta}</a>
+            <a href={COMPANY.whatsappUrl}>{dict.hero.primaryCta}</a>
           </Button>
           <Button asChild size="lg" variant="outline" className="h-12 px-6 bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent hover:text-white">
-            <a href="#cta">{dict.hero.secondaryCta}</a>
+            <a href={COMPANY.whatsappUrl}>{dict.hero.secondaryCta}</a>
           </Button>
         </div>
       </div>
