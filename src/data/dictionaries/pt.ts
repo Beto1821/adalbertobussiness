@@ -12,16 +12,41 @@ export const pt: Dictionary = {
     localeSwitchHref: "/"
   },
   hero: {
-    eyebrow: "Parceiro de Engenharia de Software",
-    headline: "Equipes de engenharia de software para empresas que precisam entregar.",
-    subheadline: "Engenheiros experientes construindo, modernizando e escalando produtos digitais.",
+    eyebrow: "Parceiro de Engenharia de Software · Sul de Minas",
+    regionLabel: "São Gonçalo do Sapucaí · Varginha · Pouso Alegre · Santa Rita do Sapucaí",
+    headline: "Engenharia de software para empresas do Sul de Minas que precisam entregar.",
+    subheadline: "Do pequeno ao grande porte, a mesma engenharia experiente por trás de sistemas, automações e squads dedicados — nascida no Vale da Eletrônica.",
     primaryCta: "Iniciar um projeto",
     secondaryCta: "Falar com o time"
   },
   positioning: {
     eyebrow: "Como atuamos",
-    title: "Capacidade de engenharia, quando você precisar.",
-    body: "A Adalberto Business coloca engenharia experiente à disposição de empresas que precisam construir, evoluir ou modernizar software — como equipe de projeto, squad integrado ou consultoria técnica contínua."
+    title: "Capacidade de engenharia, perto de você.",
+    body: "A Adalberto Business atua em todo o Sul de Minas — São Gonçalo do Sapucaí, Varginha, Pouso Alegre e Santa Rita do Sapucaí — colocando engenharia experiente à disposição de empresas de qualquer porte que precisam construir, evoluir ou modernizar software."
+  },
+  tiers: {
+    eyebrow: "Para qual porte você é",
+    title: "Mesma engenharia, para cada estágio do seu negócio.",
+    items: [
+      {
+        title: "Pequeno porte",
+        description: "Sistemas enxutos, automações e presença digital sob medida para começar com o pé direito, sem contratar uma estrutura que você ainda não precisa.",
+        cta: "Ver como começar",
+        href: "#cta"
+      },
+      {
+        title: "Médio porte",
+        description: "Sistemas próprios, integrações entre ferramentas e consultoria técnica pontual para quem já sente os limites de soluções genéricas.",
+        cta: "Agendar uma conversa",
+        href: "#cta"
+      },
+      {
+        title: "Grande porte",
+        description: "Squads dedicados, modernização de legado e consultoria técnica contínua para operações que não podem parar.",
+        cta: "Falar com o time",
+        href: "#cta"
+      }
+    ]
   },
   capabilities: {
     eyebrow: "Capacidades",
