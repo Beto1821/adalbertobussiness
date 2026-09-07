@@ -8,7 +8,7 @@ import { pt } from "@/data/dictionaries/pt";
 export default function PortugueseHome() {
   return (
     <main>
-      <SiteHeader dict={pt} homeHref="/" />
+      <SiteHeader homeHref="/" />
       <Hero dict={pt} />
       <Positioning dict={pt} />
       <Tiers dict={pt} />
