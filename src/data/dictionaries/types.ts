@@ -35,4 +35,9 @@ export type Dictionary = {
       href: string;
     }[];
   };
+  technology?: {
+    eyebrow: string;
+    title: string;
+    items: { name: string }[];
+  };
 };

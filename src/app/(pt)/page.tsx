@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero/hero";
 import { Positioning } from "@/components/sections/positioning";
 import { Tiers } from "@/components/sections/tiers";
 import { Capabilities } from "@/components/services/capabilities";
+import { Technology } from "@/components/sections/technology";
 import { pt } from "@/data/dictionaries/pt";
 
 export default function PortugueseHome() {
@@ -13,6 +14,7 @@ export default function PortugueseHome() {
       <Positioning dict={pt} />
       <Tiers dict={pt} />
       <Capabilities dict={pt} />
+      <Technology dict={pt} />
     </main>
   );
 }

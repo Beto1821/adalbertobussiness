@@ -76,5 +76,21 @@ export const pt: Dictionary = {
         href: "#cta"
       }
     ]
+  },
+  technology: {
+    eyebrow: "Nossa stack",
+    title: "Tecnologia experiente, escolhida para o seu problema.",
+    items: [
+      { name: "Python" },
+      { name: "PHP" },
+      { name: "Java" },
+      { name: "JavaScript/TypeScript" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: ".NET" },
+      { name: "DevOps" },
+      { name: "Cloud" },
+      { name: "Databases" }
+    ]
   }
 };
