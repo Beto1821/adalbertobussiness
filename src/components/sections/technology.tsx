@@ -35,7 +35,7 @@ export function Technology({ dict }: { dict: Dictionary }) {
   return (
     <section
       id="technology"
-      className="relative overflow-hidden border-t border-white/10 bg-near-black px-6 py-24 sm:py-32"
+      className="relative overflow-hidden border-t border-white/10 px-6 py-24 sm:py-32"
     >
       <div
         aria-hidden

@@ -5,7 +5,7 @@ export function Tiers({ dict }: { dict: Dictionary }) {
   if (!dict.tiers) return null;
 
   return (
-    <section id="tiers" className="border-t border-white/10 bg-near-black px-6 py-24 sm:py-32">
+    <section id="tiers" className="border-t border-white/10 px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">

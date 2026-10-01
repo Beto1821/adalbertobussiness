@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/layout/site-header";
+import { AmbientBackground } from "@/components/layout/ambient-background";
 import { Hero } from "@/components/hero/hero";
 import { Positioning } from "@/components/sections/positioning";
 import { Tiers } from "@/components/sections/tiers";
@@ -9,6 +10,7 @@ import { pt } from "@/data/dictionaries/pt";
 export default function PortugueseHome() {
   return (
     <main>
+      <AmbientBackground />
       <SiteHeader dict={pt} homeHref="/" />
       <Hero dict={pt} />
       <Positioning dict={pt} />

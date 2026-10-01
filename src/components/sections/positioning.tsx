@@ -36,7 +36,7 @@ export function Positioning({ dict }: { dict: Dictionary }) {
   }, []);
 
   return (
-    <section ref={scopeRef} id="positioning" className="border-t border-white/10 bg-near-black px-6 py-24 sm:py-32">
+    <section ref={scopeRef} id="positioning" className="border-t border-white/10 px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl">
         <p data-reveal className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
           {dict.positioning.eyebrow}
