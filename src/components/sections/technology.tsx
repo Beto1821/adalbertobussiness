@@ -56,7 +56,7 @@ export function Technology({ dict }: { dict: Dictionary }) {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="mx-auto max-w-2xl text-center"
           >
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-brand-amber">
               {technology.eyebrow}
             </p>
             <h2 className="text-3xl font-semibold leading-tight text-white sm:text-4xl">
@@ -79,13 +79,13 @@ export function Technology({ dict }: { dict: Dictionary }) {
                   variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   whileHover={{ y: -4 }}
-                  className="group relative flex items-center gap-4 overflow-hidden rounded-lg border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-colors duration-300 hover:border-electric-purple/60"
+                  className="group relative flex items-center gap-4 overflow-hidden rounded-lg border border-white/10 bg-white/5 p-6 backdrop-blur-md transition-colors duration-300 hover:border-brand-amber/60"
                 >
                   <span
                     aria-hidden
-                    className="pointer-events-none absolute -left-6 -top-6 h-20 w-20 rounded-full bg-electric-purple/40 opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
+                    className="pointer-events-none absolute -left-6 -top-6 h-20 w-20 rounded-full bg-brand-plum opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-100"
                   />
-                  <Icon aria-hidden className="relative h-8 w-8 shrink-0 text-electric-purple-text" />
+                  <Icon aria-hidden className="relative h-8 w-8 shrink-0 text-brand-amber" />
                   <span className="relative text-base font-medium text-white">{item.name}</span>
                 </m.div>
               );

@@ -6,7 +6,7 @@ export function Capabilities({ dict }: { dict: Dictionary }) {
     <section id="capabilities" className="border-t border-white/10 px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-brand-amber">
             {dict.capabilities.eyebrow}
           </p>
           <h2 className="text-3xl font-semibold leading-tight text-white sm:text-4xl">

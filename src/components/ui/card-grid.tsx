@@ -25,7 +25,7 @@ export function CardGrid({ items, columns = 4 }: { items: CardGridItem[]; column
           >
             <h3 className="text-lg font-semibold text-white">{item.title}</h3>
             <p className="mt-3 flex-1 text-sm leading-relaxed text-white/70">{item.description}</p>
-            <a href={item.href} className="mt-6 text-sm font-semibold text-electric-purple-text hover:text-white">
+            <a href={item.href} className="mt-6 text-sm font-semibold text-brand-amber hover:text-white">
               {item.cta} →
             </a>
           </m.div>

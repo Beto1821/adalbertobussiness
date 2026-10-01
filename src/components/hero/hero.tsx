@@ -28,7 +28,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section ref={scopeRef} id="hero" className="flex min-h-screen flex-col justify-center px-6 pt-16">
       <div className="mx-auto w-full max-w-4xl">
-        <p data-hero-animate className="mb-4 text-sm font-semibold uppercase tracking-widest text-electric-purple-text">
+        <p data-hero-animate className="mb-4 text-sm font-semibold uppercase tracking-widest text-brand-amber">
           {dict.hero.eyebrow}
         </p>
         {dict.hero.regionLabel ? (
@@ -43,7 +43,7 @@ export function Hero({ dict }: { dict: Dictionary }) {
           {dict.hero.subheadline}
         </p>
         <div data-hero-animate className="mt-10 flex flex-wrap gap-4">
-          <Button asChild size="lg" className="h-12 px-6 hover:bg-electric-purple">
+          <Button asChild size="lg" className="h-12 px-6 hover:bg-brand-amber/85">
             <a href={COMPANY.whatsappUrl}>{dict.hero.primaryCta}</a>
           </Button>
           <Button asChild size="lg" variant="outline" className="h-12 px-6 bg-transparent border-white/20 text-white hover:border-white/40 hover:bg-transparent hover:text-white">
