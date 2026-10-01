@@ -1,6 +1,8 @@
 export type Dictionary = {
   nav: {
     items: { label: string; href: string }[];
+    openMenuLabel: string;
+    closeMenuLabel: string;
   };
   hero: {
     eyebrow: string;
@@ -42,6 +44,7 @@ export type Dictionary = {
     phoneLabel: string;
     whatsappLabel: string;
     emailLabel: string;
+    linkedinLabel: string;
     closeLabel: string;
   };
   technology?: {

@@ -21,5 +21,7 @@ export const CONTACT = {
   phone: "+55 (35) 99802-2002",
   phoneHref: "tel:+5535998022002",
   whatsappUrl: "https://wa.me/5535998022002",
-  email: "beto1821@uol.com.br"
+  email: "beto1821@uol.com.br",
+  linkedinUrl: "https://www.linkedin.com/in/adalberto-ribeiro-344092107/",
+  linkedinHandle: "adalberto-ribeiro"
 };

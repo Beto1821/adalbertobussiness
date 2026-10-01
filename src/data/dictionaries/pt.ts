@@ -5,10 +5,10 @@ export const pt: Dictionary = {
   nav: {
     items: [
       { label: "Serviços", href: "#capabilities" },
-      { label: "Tecnologia", href: "#technology" },
-      { label: "Projetos", href: "#work" },
-      { label: "Contato", href: "#cta" }
-    ]
+      { label: "Tecnologia", href: "#technology" }
+    ],
+    openMenuLabel: "Abrir menu",
+    closeMenuLabel: "Fechar menu"
   },
   hero: {
     eyebrow: "Parceiro de Engenharia de Software · Sul de Minas",
@@ -80,10 +80,11 @@ export const pt: Dictionary = {
   contact: {
     trigger: "Contato",
     title: "Vamos conversar",
-    description: "Fale direto comigo por telefone, WhatsApp ou e-mail.",
+    description: "Fale direto comigo por telefone, WhatsApp, e-mail ou LinkedIn.",
     phoneLabel: "Telefone",
     whatsappLabel: "WhatsApp",
     emailLabel: "E-mail",
+    linkedinLabel: "LinkedIn",
     closeLabel: "Fechar"
   },
   technology: {

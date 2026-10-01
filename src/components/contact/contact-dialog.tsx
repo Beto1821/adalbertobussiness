@@ -1,22 +1,38 @@
 "use client";
 
 import { Dialog } from "radix-ui";
-import { Mail, MessageCircle, Phone, X, type LucideIcon } from "lucide-react";
+import type { ComponentType } from "react";
+import { Mail, MessageCircle, Phone, X } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
 import type { Dictionary } from "@/data/dictionaries/types";
 
-export function ContactDialog({ dict }: { dict: Dictionary }) {
+type IconProps = { className?: string; "aria-hidden"?: boolean };
+
+// lucide-react v1 dropped brand icons, so the LinkedIn mark is inlined.
+function LinkedinIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+    </svg>
+  );
+}
+
+const DEFAULT_TRIGGER_CLASS =
+  "rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-white transition-colors hover:border-brand-amber/60 hover:text-brand-amber focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-amber";
+
+export function ContactDialog({ dict, triggerClassName = DEFAULT_TRIGGER_CLASS }: { dict: Dictionary; triggerClassName?: string }) {
   const { contact } = dict;
 
-  const channels: { label: string; value: string; href: string; icon: LucideIcon; external?: boolean }[] = [
+  const channels: { label: string; value: string; href: string; icon: ComponentType<IconProps>; external?: boolean }[] = [
     { label: contact.phoneLabel, value: CONTACT.phone, href: CONTACT.phoneHref, icon: Phone },
     { label: contact.whatsappLabel, value: CONTACT.phone, href: CONTACT.whatsappUrl, icon: MessageCircle, external: true },
-    { label: contact.emailLabel, value: CONTACT.email, href: `mailto:${CONTACT.email}`, icon: Mail }
+    { label: contact.emailLabel, value: CONTACT.email, href: `mailto:${CONTACT.email}`, icon: Mail },
+    { label: contact.linkedinLabel, value: CONTACT.linkedinHandle, href: CONTACT.linkedinUrl, icon: LinkedinIcon, external: true }
   ];
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="rounded-lg border border-white/20 px-4 py-2 text-sm font-medium text-white transition-colors hover:border-brand-amber/60 hover:text-brand-amber focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-amber">
+      <Dialog.Trigger className={triggerClassName}>
         {contact.trigger}
       </Dialog.Trigger>
 
