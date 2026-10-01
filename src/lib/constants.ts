@@ -16,3 +16,10 @@ export const COMPANY = {
     "Santa Rita do Sapucaí"
   ]
 };
+
+export const CONTACT = {
+  phone: "+55 (35) 99802-2002",
+  phoneHref: "tel:+5535998022002",
+  whatsappUrl: "https://wa.me/5535998022002",
+  email: "beto1821@uol.com.br"
+};

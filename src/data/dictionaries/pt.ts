@@ -77,6 +77,15 @@ export const pt: Dictionary = {
       }
     ]
   },
+  contact: {
+    trigger: "Contato",
+    title: "Vamos conversar",
+    description: "Fale direto comigo por telefone, WhatsApp ou e-mail.",
+    phoneLabel: "Telefone",
+    whatsappLabel: "WhatsApp",
+    emailLabel: "E-mail",
+    closeLabel: "Fechar"
+  },
   technology: {
     eyebrow: "Nossa stack",
     title: "Tecnologia experiente, escolhida para o seu problema.",

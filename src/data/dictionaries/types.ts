@@ -35,6 +35,15 @@ export type Dictionary = {
       href: string;
     }[];
   };
+  contact: {
+    trigger: string;
+    title: string;
+    description: string;
+    phoneLabel: string;
+    whatsappLabel: string;
+    emailLabel: string;
+    closeLabel: string;
+  };
   technology?: {
     eyebrow: string;
     title: string;
