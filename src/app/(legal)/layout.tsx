@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function LegalLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt">
+    <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-off-white font-sans antialiased`}>
         {children}
       </body>

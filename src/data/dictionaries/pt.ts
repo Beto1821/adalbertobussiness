@@ -55,25 +55,25 @@ export const pt: Dictionary = {
         title: "Software Engineering",
         description: "Entrega backend e full-stack — Python, FastAPI, APIs REST e stacks web modernas — com base em trabalho real em produção na Proconect.",
         cta: "Iniciar um projeto",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       },
       {
         title: "Dedicated Teams",
         description: "Uma rede de engenheiros e consultores com domínio nas stacks que as empresas já usam: Python, Java, PHP, JavaScript/TypeScript, .NET, cloud e DevOps.",
         cta: "Falar com o time",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       },
       {
         title: "Technical Consulting",
         description: "Revisão de arquitetura, otimização de performance e modernização — de cache e processamento assíncrono à evolução de sistemas legados.",
         cta: "Agendar uma avaliação",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       },
       {
         title: "AI & Automation",
         description: "Automação de fluxos e pipelines de dados resilientes, apoiados em experiência real de treinamento e auditoria de qualidade de IA na Scale AI e automação na CRM DataCrazy.",
         cta: "Conhecer a automação",
-        href: "#cta"
+        href: COMPANY.whatsappUrl
       }
     ]
   },
